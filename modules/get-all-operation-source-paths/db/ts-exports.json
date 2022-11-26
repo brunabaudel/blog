@@ -1,0 +1,26 @@
+[
+  {
+    "createdAt": 1668332137781,
+    "updatedAt": 1668332137781,
+    "deletedAt": 0,
+    "createdFirstAt": 1668332137781,
+    "name": "getAllOperationSourcePaths",
+    "slug": "get-all-operation-source-paths",
+    "operationRelativeTypescriptFilePath": "src/getAllOperationSourcePaths.ts",
+    "comments": [],
+    "type": "value",
+    "id": "tfhynfrydxihgmusyacwvvzk"
+  },
+  {
+    "createdAt": 1668332137782,
+    "updatedAt": 1668332137782,
+    "deletedAt": 0,
+    "createdFirstAt": 1668332137782,
+    "name": "getAllOperationSourcePaths",
+    "slug": "get-all-operation-source-paths",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "zoavvlhywcrlrcqdsabbupqv"
+  }
+]

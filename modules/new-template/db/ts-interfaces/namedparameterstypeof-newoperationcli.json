@@ -1,0 +1,33 @@
+{
+  "createdAt": 1669055661633,
+  "updatedAt": 1669055661633,
+  "deletedAt": 0,
+  "createdFirstAt": 1669055661633,
+  "id": "namedparameterstypeof-newoperationcli",
+  "name": "NamedParameters<typeof newOperationCli>",
+  "slug": "namedparameterstypeof-newoperationcli",
+  "operationRelativeTypescriptFilePath": "src/cli/newOperation.cli.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof newOperationCli>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

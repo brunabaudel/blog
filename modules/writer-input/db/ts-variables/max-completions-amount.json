@@ -1,0 +1,24 @@
+{
+  "createdAt": 1669385132549,
+  "updatedAt": 1669385132549,
+  "deletedAt": 0,
+  "createdFirstAt": 1669385132549,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "MAX_COMPLETIONS_AMOUNT",
+  "slug": "max-completions-amount",
+  "operationRelativeTypescriptFilePath": "src/editors/MarkedToken.tsx",
+  "type": {
+    "rawType": "{}",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "100",
+  "description": "",
+  "id": "hivajsynmjxdxfcyhotgzqxd"
+}

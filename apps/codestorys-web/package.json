@@ -1,0 +1,124 @@
+{
+  "createdAt": 1669200527097,
+  "updatedAt": 1669200527097,
+  "deletedAt": 0,
+  "createdFirstAt": 1669200527097,
+  "version": "0.1.0",
+  "name": "codestorys-web",
+  "language": "english",
+  "slug": "codestorys-web",
+  "dependencies": {
+    "@badrap/bar-of-progress": "^0.2.1",
+    "@headlessui/react": "^1.6.2",
+    "@next/font": "^13.0.3",
+    "fs-orm": "1.0.1",
+    "fs-util": "1.0.5",
+    "get-path": "0.0.1",
+    "markdown-reader-functions": "0.0.1",
+    "reader-ui": "1.0.0",
+    "next": "12.3.1",
+    "next-transpile-modules": "^9.0.0",
+    "nightwind": "^1.1.12",
+    "react": "17.0.2",
+    "react-datepicker": "^4.8.0",
+    "react-datetime": "^3.1.1",
+    "react-dom": "17.0.2",
+    "react-markdown": "^8.0.3",
+    "react-query": "^3.39.0",
+    "react-with-native": "1.4.9",
+    "react-with-native-form": "*",
+    "react-with-native-router": "1.0.14",
+    "react-with-native-store": "*",
+    "read-markdown-file": "0.0.1",
+    "rehype-highlight": "^5.0.2",
+    "markdown-reader-types": "0.0.1",
+    "next-a-link": "0.0.1",
+    "codestorys-node": "0.0.1",
+    "asset-view": "0.0.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.3.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 42017",
+    "start": "next start -p 42017",
+    "stop": "pm2 stop app_codestorys-web",
+    "fillPublic": "node fillPublic.js",
+    "writeAllCodestories": "npx writeAllCodestories",
+    "build": "yarn fillPublic && next build",
+    "export": "next export",
+    "lint": "next lint"
+  },
+  "operation": {
+    "indirectDependencies": [
+      "collect-static-assets"
+    ],
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "indexImportExportError": "",
+      "indexInteracesErrors": [
+        "No schema/definitions found for /Users/brunabaudel/Developer/typescript/blog/apps/codestorys-web/src/Layout.tsx. Error: Error: Unknown node \"new (props: P) => Component<P, any>\" of kind \"ConstructorType\""
+      ],
+      "lintProblems": []
+    },
+    "classificationIndexed": "ui-web",
+    "coreDependenciesIndexed": [],
+    "folderNameIndexed": "codestorys-web",
+    "hasGeneratedDependenciesIndexed": true,
+    "lastPullTimeAtIndexed": 0,
+    "lastRebuildAt": 1669291088365,
+    "operationDependenciesIndexed": [
+      "MarkdownReaderPageProps",
+      "Div",
+      "P",
+      "ALink",
+      "AssetView",
+      "Div",
+      "P",
+      "MarkdownReaderPageProps",
+      "StoreProvider",
+      "publicEnvironmentVariables",
+      "publicLocalEnvironmentVariables",
+      "codestoriesGetStaticProps"
+    ],
+    "packageDependenciesIndexed": [
+      "AppProps",
+      "QueryClient",
+      "QueryClientProvider"
+    ],
+    "relativeOperationLocationPathIndexed": "operations/tools/purpose/codebase-introspection/reader",
+    "markdown": "# 🧙‍♂️ codestories-web\n\nNB: this is an experimental part of typerepo!",
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 5,
+        "lines": 170,
+        "characters": 5279,
+        "bytes": 5279
+      },
+      "dataSize": {
+        "numberOfFiles": 21,
+        "lines": 225,
+        "characters": 7389,
+        "bytes": 7389
+      },
+      "textSize": {
+        "numberOfFiles": 2,
+        "lines": 69,
+        "characters": 1206,
+        "bytes": 1206
+      },
+      "size": {
+        "bytes": 13874,
+        "characters": 13874,
+        "lines": 464,
+        "numberOfFiles": 28
+      }
+    },
+    "hasGeneratedImportsIndexed": false
+  },
+  "id": "ulxdvwhgearuudloknysrfiz"
+}

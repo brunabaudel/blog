@@ -1,0 +1,122 @@
+{
+  "createdAt": 1669055667978,
+  "updatedAt": 1669055667978,
+  "deletedAt": 0,
+  "createdFirstAt": 1669055667978,
+  "isApiExposed": true,
+  "isExported": true,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/newOperation.ts",
+  "commentsInside": [],
+  "rawText": " async (\n  name?: string,\n  config?: NewOperationConfig\n): Promise<string | undefined> => {\n  // NB: if we don't specify the type, create a node operation by default\n  const type = config?.type || \"node-cjs\";\n\n  const description = config?.description;\n  const destinationPath = config?.destinationPath;\n  const manualProjectRoot = config?.manualProjectRoot;\n  const folder = name ? kebabCase(name) : \"untitled-operation\";\n  const source = path.resolve(__dirname, \"..\", \"assets\", \"templates\", type);\n  const templateExists = fs.existsSync(source);\n\n  if (!templateExists) {\n    log(\n      `${type} operations cannot be generated yet. Create a template in assets/templates/${type}`\n    );\n    return;\n  }\n\n  const rootFolderPath = destinationPath ? destinationPath : process.cwd();\n  const availableFolderName = await getAvailableOperationName(\n    rootFolderPath,\n    folder,\n    manualProjectRoot\n  );\n\n  const operationBasePath = path.join(rootFolderPath, availableFolderName);\n\n  // Make the non-existing folder\n  await fs.mkdir(operationBasePath, { recursive: true });\n  // Copy the template inthere\n  await fs.cpAsync(source, operationBasePath, { recursive: true });\n  // Rename templatefiles if needed\n  await renameTemplateFiles({ appDir: operationBasePath });\n\n  const packageJsonPath = path.join(operationBasePath, \"package.json\");\n\n  const hasAvailablePackageJson =\n    fs.existsSync(packageJsonPath) && (await canRead(packageJsonPath));\n  if (!hasAvailablePackageJson) {\n    log(\"The template package.json was not copied succesfully\", {\n      type: \"error\",\n    });\n    return;\n  }\n\n  await setJsonKey({\n    jsonPath: packageJsonPath,\n    keyLocation: \"name\",\n    value: availableFolderName,\n  });\n\n  if (description) {\n    await setJsonKey({\n      jsonPath: packageJsonPath,\n      keyLocation: \"description\",\n      value: description,\n    });\n  }\n\n  return operationBasePath;\n}",
+  "name": "newOperation",
+  "slug": "new-operation",
+  "parameters": [
+    {
+      "name": "name",
+      "schema": {
+        "type": "string"
+      },
+      "simplifiedSchema": {
+        "type": "string"
+      },
+      "required": false
+    },
+    {
+      "name": "config",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "$ref": "#/definitions/OperationClassification"
+          },
+          "description": {
+            "type": "string"
+          },
+          "destinationPath": {
+            "type": "string",
+            "description": "destinationPath without the operation folder itself\n\n\nIf not provided, uses the working directory from where the process was executed + an inferred foldername"
+          },
+          "manualProjectRoot": {
+            "type": "string",
+            "description": "folder path (including if given, uses this project root instead of the project root of the executed process"
+          }
+        },
+        "additionalProperties": false
+      },
+      "simplifiedSchema": {
+        "properties": [
+          {
+            "name": "type",
+            "required": false,
+            "schema": {
+              "enum": [
+                "cjs",
+                "ts",
+                "esm",
+                "node-cjs",
+                "node-esm",
+                "node-ts",
+                "server-cjs",
+                "ui-web",
+                "ui-app",
+                "ui-ts",
+                "ui-cjs",
+                "ui-esm"
+              ],
+              "fullComment": "`OperationClassification` tells you to what kind of environment the operation can be exposed to. It tells you things about how it will be built. There are three categories: Full stack, frontend only, and backend only. The aim is to do as much as possible in the full stack realm so it can be reused anywhere. If that is not possible, `ui-esm` is preferred for the frontend, or `node-esm` for things that require backend.\n\nTODO: It would be great to learn more about this topic and see if I can make more cross-environment packages. A great use case would be to create a wrapper around the current `fs-orm` to enable using it at the frontend too.\n\n# Possible values\n\nFULL STACK\n\n- `cjs`: only js (no node) (well, ts of course, but it gets built into common js)\n\n- `ts`: non-built typescript code (needs to be transpiled, not recommended)\n\nTODO: `esm`: builds to ESM module resolved Javascript\n\nFRONTEND ONLY (cannot be used within backend-only operations)\n\n- `ui-web`: has next.config.js and thus exposes something on some port when it is ran. next.js + react-based...\n\n- `ui-app`: uses react-native and exposes something on some port when it is ran\n\n- `ui-ts`: uses react (with (native)), which main entry points to typescript es6 files (this ui package cannot be built, should be transpiled. Primarily used for big ui libraries tied to a `ui-web` and `ui-app` for convenience. For other things, it is highly discouraged, please use `ui-cjs` or `ui-esm`)\n\n- `ui-cjs`: ui which main entry points to javascript es5 files (this ui package can be built). don't import ESM packages in here, this may give problems.\n\n- `ui-esm`: ui which builds to ESM module resolved Javascript. All packages that use `ui-esm` packages, need to be `ui-esm`, `ui-es6`, `ui-web`, or `ui-app` in order to work properly. It seems to have difficulties using this in `ui-cjs`\n\nBACKEND ONLY (cannot be used within frontend-only operations)\n\n- `node-cjs`: includes other node packages, operations, core-imports, and globals.\n\nTODO: `node-esm`: Typescript package that is built to ESM Javascript which also includes all node packages, operations, core-imports and globals.\n\nTODO: `node-ts`: transpilable node package\n\n- `server-cjs`: exposes something on some port when it is ran and uses node code\n\n# Indexation\n\nOperations will be classified automatically. It is good to remember that:\n\n- It will be classified as UI if `isUiOperation` resolves to true\n- It will be classified as Node if `Operation` has a (dev)dependency on `@types/node`.\n- Otherwise, it will be classified as base typescript (full stack)\n- It will be classified to an ESM operation if `tsconfigCompilesEsm` resolves to true.\n- It will be classified to a TS operation if `packageCompilesTs` resolves to true\n- In order for it to be classified as a server, you must set `isNodeServer` to true in the `.operation` config object of `Operation`",
+              "todo": "It would be great to learn more about this topic and see if I can make more cross-environment packages. A great use case would be to create a wrapper around the current `fs-orm` to enable using it at the frontend too.",
+              "type": "string"
+            }
+          },
+          {
+            "name": "description",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "destinationPath",
+            "required": false,
+            "schema": {
+              "fullComment": "destinationPath without the operation folder itself\n\n\nIf not provided, uses the working directory from where the process was executed + an inferred foldername",
+              "type": "string"
+            }
+          },
+          {
+            "name": "manualProjectRoot",
+            "required": false,
+            "schema": {
+              "fullComment": "folder path (including if given, uses this project root instead of the project root of the executed process",
+              "type": "string"
+            }
+          }
+        ],
+        "type": "object"
+      },
+      "required": false
+    }
+  ],
+  "description": "# How to create a package/operation?\n\nThis cli creates the correct tsconfig.json, package.json, .gitignore, folder setup, so you can get started immedeately.\n\nReturns either the `operationBasePath` of the created operation, or undefined if something went wrong",
+  "returnType": {
+    "rawType": "Promise<string | undefined>",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 3,
+  "size": {
+    "characters": 2149,
+    "lines": 68,
+    "bytes": 2149,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 32,
+    "linesPerFile": 68,
+    "numberOfFiles": 1
+  },
+  "id": "yvwuhdptwyoypbmbhcclmvqt"
+}

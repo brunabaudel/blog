@@ -1,0 +1,33 @@
+{
+  "createdAt": 1669276618424,
+  "updatedAt": 1669276618424,
+  "deletedAt": 0,
+  "createdFirstAt": 1669276618424,
+  "id": "namedparameterstypeof-generatesdkapicli",
+  "name": "NamedParameters<typeof generateSdkApiCli>",
+  "slug": "namedparameterstypeof-generatesdkapicli",
+  "operationRelativeTypescriptFilePath": "src/cli/generateSdkApi.cli.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof generateSdkApiCli>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

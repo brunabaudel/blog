@@ -1,0 +1,37 @@
+{
+  "createdAt": 1669276632650,
+  "updatedAt": 1669276632650,
+  "deletedAt": 0,
+  "createdFirstAt": 1669276632650,
+  "isApiExposed": true,
+  "isExported": true,
+  "groupAuthorization": {},
+  "explicitTypeName": "ProjectWatcher",
+  "operationRelativeTypescriptFilePath": "src/generateSdkApiWatcher.ts",
+  "commentsInside": [],
+  "rawText": " async () => {\n  if (isRegenerating === true) {\n    // Don't run if it's already running\n    return;\n  }\n  // console.log(\"Generate sdk-api...\");\n\n  // isRegenerating = true;\n  // await generateSdkApi();\n\n  // console.log(\"DONE, exiting server\");\n  // isRegenerating = false;\n  process.exit();\n}",
+  "name": "generateSdkApiWatcher",
+  "slug": "generate-sdk-api-watcher",
+  "parameters": [],
+  "description": "",
+  "returnType": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 2,
+  "size": {
+    "characters": 295,
+    "lines": 14,
+    "bytes": 295,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 21,
+    "linesPerFile": 14,
+    "numberOfFiles": 1
+  },
+  "id": "kqwjwudqionosvyoruylmwaz"
+}

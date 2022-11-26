@@ -1,0 +1,82 @@
+{
+  "createdAt": 1668331958465,
+  "updatedAt": 1668331958465,
+  "deletedAt": 0,
+  "createdFirstAt": 1668331958465,
+  "publicAuthorization": [
+    "read",
+    "search"
+  ],
+  "isApiExposed": false,
+  "isPostApi": false,
+  "isGetApi": false,
+  "isExported": true,
+  "operationRelativeTypescriptFilePath": "src/general.ts",
+  "commentsInside": [],
+  "rawText": " (array1: unknown[], array2: unknown[]) =>\n  array1.length === array2.length &&\n  array1.every((value, index) => value === array2[index])",
+  "name": "isEqualArray",
+  "slug": "is-equal-array",
+  "parameters": [
+    {
+      "name": "array1",
+      "schema": {
+        "type": "array",
+        "items": {}
+      },
+      "simplifiedSchema": {
+        "items": [
+          {
+            "schema": {
+              "properties": [],
+              "type": "object"
+            },
+            "name": null
+          }
+        ],
+        "type": "array"
+      },
+      "required": true
+    },
+    {
+      "name": "array2",
+      "schema": {
+        "type": "array",
+        "items": {}
+      },
+      "simplifiedSchema": {
+        "items": [
+          {
+            "schema": {
+              "properties": [],
+              "type": "object"
+            },
+            "name": null
+          }
+        ],
+        "type": "array"
+      },
+      "required": true
+    }
+  ],
+  "description": "As long as there are no .template files present in the template folder that DONT need to be changed, it is fine.\nIf there are, we should warn people.",
+  "returnType": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 1,
+  "size": {
+    "characters": 286,
+    "lines": 4,
+    "bytes": 286,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 72,
+    "linesPerFile": 4,
+    "numberOfFiles": 1
+  },
+  "id": "jlxyujtwdsyfsybnnihgwnqv"
+}

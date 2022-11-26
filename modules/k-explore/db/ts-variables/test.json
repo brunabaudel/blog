@@ -1,0 +1,41 @@
+{
+  "createdAt": 1668976650008,
+  "updatedAt": 1668976650008,
+  "deletedAt": 0,
+  "createdFirstAt": 1668976650008,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "test",
+  "slug": "test",
+  "operationRelativeTypescriptFilePath": "src/test.ts",
+  "type": {
+    "rawType": "never[]",
+    "typeDefinition": {
+      "optional": false,
+      "type": "array",
+      "items": {}
+    },
+    "typeCoverage": 0,
+    "isArray": true,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "items": [
+        {
+          "schema": {
+            "properties": [],
+            "type": "object"
+          },
+          "name": null
+        }
+      ],
+      "type": "array"
+    }
+  },
+  "value": "[]",
+  "description": "",
+  "id": "atkafjdvdhopxqlllorxwwoy"
+}

@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var get_path_1=require("get-path"),generateOperationsSdk_1=require("../generateOperationsSdk"),generateOperationsSdkCli=function(){var e=process.argv.slice(2)[0],t=(0,get_path_1.getProjectRoot)(process.cwd());(0,generateOperationsSdk_1.generateOperationsSdk)({manualProjectRoot:e||t})};generateOperationsSdkCli();
+//# sourceMappingURL=generateOperationsSdk.cli.js.map

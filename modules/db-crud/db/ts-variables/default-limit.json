@@ -1,0 +1,24 @@
+{
+  "createdAt": 1669131433697,
+  "updatedAt": 1669131433697,
+  "deletedAt": 0,
+  "createdFirstAt": 1669131433697,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "defaultLimit",
+  "slug": "default-limit",
+  "operationRelativeTypescriptFilePath": "src/crud/useInfiniteGetDbModel.ts",
+  "type": {
+    "rawType": "{}",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "50",
+  "description": "",
+  "id": "uzduwyxxxpzrgghggqjcwbzr"
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1669131403383,
+  "updatedAt": 1669131403383,
+  "deletedAt": 0,
+  "createdFirstAt": 1669131403383,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "{ upsertDbModel }",
+  "slug": "upsert-db-model",
+  "operationRelativeTypescriptFilePath": "src/UpsertForm.tsx",
+  "type": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "api",
+  "description": "",
+  "id": "owzyhncendtfszyrbusgxhxh"
+}

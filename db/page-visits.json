@@ -1,0 +1,26 @@
+[
+  {
+    "createdAt": 1669476183526,
+    "updatedAt": 1669476183526,
+    "deletedAt": 0,
+    "createdFirstAt": 1669476183526,
+    "ipInfo": {
+      "ip": "::1"
+    },
+    "path": "http://localhost:42001/",
+    "deviceId": "gdasihotjuagfzpcljvnhrgx",
+    "id": "ppvftiydpyespcccsajirxaj"
+  },
+  {
+    "createdAt": 1669476183527,
+    "updatedAt": 1669476183527,
+    "deletedAt": 0,
+    "createdFirstAt": 1669476183527,
+    "ipInfo": {
+      "ip": "::1"
+    },
+    "path": "http://localhost:42001/",
+    "deviceId": "gdasihotjuagfzpcljvnhrgx",
+    "id": "ybcmqzgyrqkqosditdmlbusm"
+  }
+]

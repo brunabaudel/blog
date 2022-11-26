@@ -1,0 +1,18 @@
+[
+  {
+    "createdAt": 1668331959273,
+    "updatedAt": 1668331959273,
+    "deletedAt": 0,
+    "createdFirstAt": 1668331959273,
+    "name": "Comment",
+    "slug": "comment",
+    "operationRelativeTypescriptFilePath": "src/general.ts",
+    "comment": "As long as there are no .template files present in the template folder that DONT need to be changed, it is fine.\nIf there are, we should warn people.",
+    "rawStatement": "export const isEqualArray = (array1: unknown[], array2: unknown[]) =>\n  array1.length === array2.length &&\n  array1.every((value, index) => value === array2[index]);",
+    "parameters": {},
+    "types": [],
+    "firstLine": 7,
+    "lastLine": 10,
+    "id": "rzwqrcaxmkiieeisdacgktld"
+  }
+]

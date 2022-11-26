@@ -1,0 +1,24 @@
+{
+  "createdAt": 1668334790729,
+  "updatedAt": 1668334790729,
+  "deletedAt": 0,
+  "createdFirstAt": 1668334790729,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "exampleLine",
+  "slug": "example-line",
+  "operationRelativeTypescriptFilePath": "src/example.ts",
+  "type": {
+    "rawType": "String",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "`key: value <!-- comment -->`",
+  "description": "",
+  "id": "ufjwqxkjreuaktbwdhwnduwz"
+}

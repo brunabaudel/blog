@@ -1,0 +1,74 @@
+[
+  {
+    "createdAt": 1668336304620,
+    "updatedAt": 1668336304620,
+    "deletedAt": 0,
+    "createdFirstAt": 1668336304620,
+    "name": "exitIfOperationsChange",
+    "slug": "exit-if-operations-change",
+    "operationRelativeTypescriptFilePath": "src/general.ts",
+    "comments": [],
+    "type": "value",
+    "id": "anueflwqngmosnvuzvgwtjzi"
+  },
+  {
+    "createdAt": 1668336304620,
+    "updatedAt": 1668336304620,
+    "deletedAt": 0,
+    "createdFirstAt": 1668336304620,
+    "name": "gitCommitAllCron",
+    "slug": "git-commit-all-cron",
+    "operationRelativeTypescriptFilePath": "src/general.ts",
+    "comments": [],
+    "type": "value",
+    "id": "frycyjurvruzzebblrdsynzy"
+  },
+  {
+    "createdAt": 1668336304620,
+    "updatedAt": 1668336304620,
+    "deletedAt": 0,
+    "createdFirstAt": 1668336304620,
+    "name": "exitIfOperationsChange",
+    "slug": "exit-if-operations-change",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "pjfilnpuanazvermzbtfrpaz"
+  },
+  {
+    "createdAt": 1668336304620,
+    "updatedAt": 1668336304620,
+    "deletedAt": 0,
+    "createdFirstAt": 1668336304620,
+    "name": "gitCommitAllCron",
+    "slug": "git-commit-all-cron",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "oojatnpcrqyjjmkwhvllgwqu"
+  },
+  {
+    "createdAt": 1668336304620,
+    "updatedAt": 1668336304620,
+    "deletedAt": 0,
+    "createdFirstAt": 1668336304620,
+    "name": "watchOperations",
+    "slug": "watch-operations",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "bdmlkbfnfduyrjvjavuujdbp"
+  },
+  {
+    "createdAt": 1668336304620,
+    "updatedAt": 1668336304620,
+    "deletedAt": 0,
+    "createdFirstAt": 1668336304620,
+    "name": "watchOperations",
+    "slug": "watch-operations",
+    "operationRelativeTypescriptFilePath": "src/watchOperations.ts",
+    "comments": [],
+    "type": "value",
+    "id": "huplsetzsddmvndeovqymzmq"
+  }
+]

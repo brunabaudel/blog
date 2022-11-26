@@ -1,0 +1,128 @@
+{
+  "createdAt": 1668328693039,
+  "updatedAt": 1668328693039,
+  "deletedAt": 0,
+  "createdFirstAt": 1668328693039,
+  "id": "vLetZlCpQpRtGyqz",
+  "dependencies": {
+    "@badrap/bar-of-progress": "^0.2.1",
+    "@headlessui/react": "^1.6.2",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@zeit/next-workers": "^1.0.0",
+    "api": "0.0.1",
+    "api-store": "0.0.1",
+    "authentication": "0.0.1",
+    "clickable-icon": "0.0.1",
+    "db-crud": "0.0.0",
+    "db-recipes": "0.0.1",
+    "js-util": "0.0.1",
+    "layout": "0.0.0",
+    "nested-menu": "0.0.1",
+    "next": "12.3.1",
+    "next-transpile-modules": "^9.0.0",
+    "nightwind": "^1.1.12",
+    "react": "17.0.2",
+    "react-datepicker": "^4.8.0",
+    "react-datetime": "^3.1.1",
+    "react-dom": "17.0.2",
+    "react-markdown": "^8.0.3",
+    "react-query": "^3.39.0",
+    "react-with-native": "1.4.9",
+    "react-with-native-alert": "1.0.33",
+    "react-with-native-form": "*",
+    "react-with-native-modal": "1.0.60",
+    "react-with-native-notification": "1.0.42",
+    "react-with-native-router": "1.0.14",
+    "react-with-native-store": "2.0.40",
+    "rehype-highlight": "^5.0.2",
+    "worker-loader": "^3.0.8",
+    "writer-input": "1.0.0",
+    "react-with-native-select": "2.0.7"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.3.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 42002",
+    "start": "next start -p 42002",
+    "stop": "pm2 stop app_db-web",
+    "build": "next build",
+    "lint": "next lint"
+  },
+  "version": "0.1.0",
+  "name": "db-web",
+  "language": "english",
+  "slug": "db-web",
+  "operation": {
+    "indirectDependencies": [
+      "db-crud"
+    ],
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "indexImportExportError": "",
+      "indexInteracesErrors": [
+        "No schema/definitions found for /Users/king/King/operations/tools/purpose/codebase-introspection/database/db-web/src/pages/_app.tsx. Error: Error: Unknown node \"new (props: P) => Component<P, any>\" of kind \"ConstructorType\""
+      ],
+      "lintProblems": []
+    },
+    "classificationIndexed": "ui-web",
+    "coreDependenciesIndexed": [],
+    "folderNameIndexed": "db-web",
+    "hasGeneratedDependenciesIndexed": false,
+    "lastPullTimeAtIndexed": 0,
+    "lastRebuildAt": 1669276132322,
+    "operationDependenciesIndexed": [
+      "queries",
+      "AuthenticationLayout",
+      "useSelect",
+      "destructureOptionalObject",
+      "createStore",
+      "apiStoreInitialValues",
+      "nestedMenuStoreInitialValues",
+      "writerInitialValues",
+      "dbCrudInitialValues",
+      "AlertProvider",
+      "ModalProvider",
+      "ToastContainer",
+      "LoginForm"
+    ],
+    "packageDependenciesIndexed": [
+      "AppProps",
+      "QueryClient",
+      "QueryClientProvider"
+    ],
+    "relativeOperationLocationPathIndexed": "operations/tools/purpose/codebase-introspection/database",
+    "markdown": "# 🗄 database\n\nWraps `db-ui` to expose it on a next.js react website for in the browser.\n",
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 5,
+        "lines": 168,
+        "characters": 5217,
+        "bytes": 5217
+      },
+      "dataSize": {
+        "numberOfFiles": 9,
+        "lines": 217,
+        "characters": 5798,
+        "bytes": 5798
+      },
+      "textSize": {
+        "numberOfFiles": 5,
+        "lines": 210,
+        "characters": 7854,
+        "bytes": 7854
+      },
+      "size": {
+        "bytes": 18869,
+        "characters": 18869,
+        "lines": 595,
+        "numberOfFiles": 19
+      }
+    },
+    "hasGeneratedImportsIndexed": false
+  }
+}

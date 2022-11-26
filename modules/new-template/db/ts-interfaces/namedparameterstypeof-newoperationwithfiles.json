@@ -1,0 +1,172 @@
+{
+  "createdAt": 1669055672415,
+  "updatedAt": 1669055672415,
+  "deletedAt": 0,
+  "createdFirstAt": 1669055672415,
+  "id": "namedparameterstypeof-newoperationwithfiles",
+  "name": "NamedParameters<typeof newOperationWithFiles>",
+  "slug": "namedparameterstypeof-newoperationwithfiles",
+  "operationRelativeTypescriptFilePath": "src/newOperationWithFiles.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "srcFileContentObject": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "NB: relative paths must be relative to OPERATION ROOT, not src root!"
+        },
+        "config": {
+          "type": "object",
+          "properties": {
+            "manualProjectRoot": {
+              "type": "string"
+            },
+            "destinationPath": {
+              "type": "string",
+              "description": "folder path without the folder name of the package to be created\n\nif given, will place it here, otherwise, will place it in the default location (tools/generated for os projects, packages for bundled projects)"
+            },
+            "overwriteIfExists": {
+              "type": "boolean",
+              "description": "if true, overwrites the operation if it already exists. It does this in a way that it does not break the OS very long, because it removes the old one only after the new one has been created. The removal and renaming the new one to this target name happens almost instantaneously"
+            },
+            "overwriteCurrentOperationIfExists": {
+              "type": "boolean"
+            },
+            "skipYarnInstall": {
+              "type": "boolean",
+              "description": "if the operation did not exist before, `yarn install` will usually be ran.\n\nIf you want to skip that, set this to `true`"
+            },
+            "skipYarnBuild": {
+              "type": "boolean",
+              "description": "skips yarn build if `true`"
+            },
+            "dryrun": {
+              "type": "boolean",
+              "description": "don't write anything, just return the files to create with the strings"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "name",
+        "srcFileContentObject"
+      ],
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [
+        {
+          "name": "name",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "description",
+          "required": false,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "srcFileContentObject",
+          "required": true,
+          "schema": {
+            "fullComment": "NB: relative paths must be relative to OPERATION ROOT, not src root!",
+            "nb": "relative paths must be relative to OPERATION ROOT, not src root!",
+            "properties": [],
+            "type": "object"
+          }
+        },
+        {
+          "name": "config",
+          "required": false,
+          "schema": {
+            "properties": [
+              {
+                "name": "manualProjectRoot",
+                "required": false,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "destinationPath",
+                "required": false,
+                "schema": {
+                  "fullComment": "folder path without the folder name of the package to be created\n\nif given, will place it here, otherwise, will place it in the default location (tools/generated for os projects, packages for bundled projects)",
+                  "type": "string"
+                }
+              },
+              {
+                "name": "overwriteIfExists",
+                "required": false,
+                "schema": {
+                  "fullComment": "if true, overwrites the operation if it already exists. It does this in a way that it does not break the OS very long, because it removes the old one only after the new one has been created. The removal and renaming the new one to this target name happens almost instantaneously",
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "overwriteCurrentOperationIfExists",
+                "required": false,
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "skipYarnInstall",
+                "required": false,
+                "schema": {
+                  "fullComment": "if the operation did not exist before, `yarn install` will usually be ran.\n\nIf you want to skip that, set this to `true`",
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "skipYarnBuild",
+                "required": false,
+                "schema": {
+                  "fullComment": "skips yarn build if `true`",
+                  "type": "boolean"
+                }
+              },
+              {
+                "name": "dryrun",
+                "required": false,
+                "schema": {
+                  "fullComment": "don't write anything, just return the files to create with the strings",
+                  "type": "boolean"
+                }
+              }
+            ],
+            "type": "object"
+          }
+        }
+      ],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof newOperationWithFiles>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

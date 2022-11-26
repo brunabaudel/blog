@@ -1,0 +1,59 @@
+{
+  "createdAt": 1668331957906,
+  "updatedAt": 1668331957906,
+  "deletedAt": 0,
+  "createdFirstAt": 1668331957906,
+  "id": "namedparameterstypeof-findtemplates",
+  "name": "NamedParameters<typeof findTemplates>",
+  "slug": "namedparameterstypeof-findtemplates",
+  "operationRelativeTypescriptFilePath": "src/general.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "properties": {
+        "basePath": {
+          "type": "string"
+        },
+        "doNotExploreChildFolders": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "basePath"
+      ],
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [
+        {
+          "name": "basePath",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "doNotExploreChildFolders",
+          "required": false,
+          "schema": {
+            "type": "boolean"
+          }
+        }
+      ],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof findTemplates>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

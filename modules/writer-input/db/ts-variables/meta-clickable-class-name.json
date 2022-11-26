@@ -1,0 +1,24 @@
+{
+  "createdAt": 1669385132549,
+  "updatedAt": 1669385132549,
+  "deletedAt": 0,
+  "createdFirstAt": 1669385132549,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "metaClickableClassName",
+  "slug": "meta-clickable-class-name",
+  "operationRelativeTypescriptFilePath": "src/editors/MarkedToken.tsx",
+  "type": {
+    "rawType": "String",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "\"context-writer-meta-clickable\"",
+  "description": "",
+  "id": "fekleujylvlmfrsrnllzzyqe"
+}

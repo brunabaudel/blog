@@ -1,0 +1,33 @@
+{
+  "createdAt": 1669276691250,
+  "updatedAt": 1669276691250,
+  "deletedAt": 0,
+  "createdFirstAt": 1669276691250,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "isGetEndpoint",
+  "slug": "is-get-endpoint",
+  "operationRelativeTypescriptFilePath": "src/isGetEndpoint.ts",
+  "type": {
+    "rawType": "(functionName: string) => any",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "(functionName: string) => {\n  return functionName.endsWith(apiConventions.getFunctionConventionSuffix);\n}",
+  "description": "",
+  "id": "osykzzfpapoehowvfeormled"
+}

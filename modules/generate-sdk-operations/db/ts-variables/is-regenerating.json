@@ -1,0 +1,31 @@
+{
+  "createdAt": 1669276632755,
+  "updatedAt": 1669276632755,
+  "deletedAt": 0,
+  "createdFirstAt": 1669276632755,
+  "classification": "let",
+  "comments": [],
+  "isExported": false,
+  "name": "isRegenerating",
+  "slug": "is-regenerating",
+  "operationRelativeTypescriptFilePath": "src/generateSdkApiWatcher.ts",
+  "type": {
+    "rawType": "{}",
+    "typeDefinition": {
+      "optional": false,
+      "type": "boolean"
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": true,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "type": "boolean"
+    }
+  },
+  "value": "false",
+  "description": "",
+  "id": "ctepghmmhbynkyrvngpwlejq"
+}

@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.StarsInputType=void 0;var StarsInputType=function(){};exports.StarsInputType=StarsInputType;
+//# sourceMappingURL=types.js.map

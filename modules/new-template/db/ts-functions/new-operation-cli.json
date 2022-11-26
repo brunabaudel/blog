@@ -1,0 +1,36 @@
+{
+  "createdAt": 1669055662766,
+  "updatedAt": 1669055662766,
+  "deletedAt": 0,
+  "createdFirstAt": 1669055662766,
+  "isApiExposed": true,
+  "isExported": false,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/cli/newOperation.cli.ts",
+  "commentsInside": [],
+  "rawText": " async () => {\n  const [name, type, description, destinationPath] = process.argv.slice(2);\n\n  log(`Let's make a ${type || \"node-cjs\"} operation called ${name}`, {\n    type: \"important\",\n  });\n  console.log(\"All types possible:\", operationClassificationConst.join(\", \"));\n\n  await newOperation(name, {\n    type: type as OperationClassification,\n    description,\n    destinationPath,\n  });\n\n  console.log(`Generated operation`, {\n    name,\n    type,\n    description,\n    destinationPath,\n  });\n}",
+  "name": "newOperationCli",
+  "slug": "new-operation-cli",
+  "parameters": [],
+  "description": "newOperation also works as CLI\n\nexample: `newOperation [operation-name] [type]` in the folder where you want to create it. Optionally you can specify the type of operation as the second argument of the CLI\n\nArguments (all optional):\n- name: string\n- type: `OperationClassification`\n- description: string\n- destinationPath: string",
+  "returnType": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 2,
+  "size": {
+    "characters": 822,
+    "lines": 29,
+    "bytes": 822,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 28,
+    "linesPerFile": 29,
+    "numberOfFiles": 1
+  },
+  "id": "khzjggvtsnywtohayuynzmwb"
+}

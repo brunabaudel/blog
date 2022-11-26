@@ -1,0 +1,35 @@
+{
+  "createdAt": 1669276650723,
+  "updatedAt": 1669276650723,
+  "deletedAt": 0,
+  "createdFirstAt": 1669276650723,
+  "id": "operationclassificationobject",
+  "name": "OperationClassificationObject",
+  "slug": "operationclassificationobject",
+  "operationRelativeTypescriptFilePath": "src/tsFunctionIsSdkable.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/OperationClassification"
+      }
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "OperationClassificationObject",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

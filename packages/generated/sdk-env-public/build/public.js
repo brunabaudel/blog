@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.publicEnvironmentVariables=void 0,exports.publicEnvironmentVariables={markdownReaderTitle:"Typerepo",dbAdminTitle:"Typerepo"};
+//# sourceMappingURL=public.js.map

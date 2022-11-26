@@ -1,0 +1,24 @@
+{
+  "createdAt": 1668750107567,
+  "updatedAt": 1668750107567,
+  "deletedAt": 0,
+  "createdFirstAt": 1668750107567,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "uniqueAppKey",
+  "slug": "unique-app-key",
+  "operationRelativeTypescriptFilePath": "src/watchman.ts",
+  "type": {
+    "rawType": "String",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "\"watch-folders\"",
+  "description": "",
+  "id": "hhbhlvgfihlhhjhqkwyuluwm"
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1668775439685,
+  "updatedAt": 1668775439685,
+  "deletedAt": 0,
+  "createdFirstAt": 1668775439685,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "AUTH_TOKEN_STORAGE_KEY",
+  "slug": "auth-token-storage-key",
+  "operationRelativeTypescriptFilePath": "src/api.ts",
+  "type": {
+    "rawType": "String",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "\"api.authToken\"",
+  "description": "",
+  "id": "skhrypnwvsjrbxafqhzomwmp"
+}

@@ -1,0 +1,82 @@
+{
+  "createdAt": 1669276627688,
+  "updatedAt": 1669276627688,
+  "deletedAt": 0,
+  "createdFirstAt": 1669276627688,
+  "isApiExposed": true,
+  "isExported": true,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/generateFunctionSdks.ts",
+  "commentsInside": [],
+  "rawText": " async (config?: {\n  manualProjectRoot?: string;\n  skipYarnInstall?: boolean;\n  dryrun?: boolean;\n}) => {\n  const manualProjectRoot = config?.manualProjectRoot;\n\n  const { apiFunctions, jsFunctions, uiFunctions } =\n    await getFunctionSdksContent({ manualProjectRoot });\n\n  if (!apiFunctions || !jsFunctions || !uiFunctions) return;\n\n  const promises = [\n    // sdks\n    newFunctionSdkOperation(\"sdk-api\", apiFunctions, config),\n    newFunctionSdkOperation(\"sdk-js\", jsFunctions, config),\n    newFunctionSdkOperation(\"sdk-ui\", uiFunctions, config),\n\n    /**\n     * SDK Keys operations: Needed because \"sdk-api\" is node-only\n     */\n    newFunctionKeysSdkOperation(\n      \"sdk-api-keys\",\n      [\n        {\n          variableName: \"functionApiKeys\",\n          values: apiFunctions.map((x) => x.name),\n        },\n      ],\n      config\n    ),\n  ];\n\n  await Promise.all(promises);\n}",
+  "name": "generateFunctionSdks",
+  "slug": "generate-function-sdks",
+  "parameters": [
+    {
+      "name": "config",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "manualProjectRoot": {
+            "type": "string"
+          },
+          "skipYarnInstall": {
+            "type": "boolean"
+          },
+          "dryrun": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "simplifiedSchema": {
+        "properties": [
+          {
+            "name": "manualProjectRoot",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "skipYarnInstall",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "dryrun",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "type": "object"
+      },
+      "required": false
+    }
+  ],
+  "description": "Creates\n\n- sdk-api + sdk-api-keys (for all exposed functions)\n- sdk-js (functions that can be executed anywhere)\n- sdk-ui (functions that use JSX)\n\nOverwrites them if they already exist with minimal interruption time of the system",
+  "returnType": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 5,
+  "size": {
+    "characters": 1108,
+    "lines": 41,
+    "bytes": 1108,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 27,
+    "linesPerFile": 41,
+    "numberOfFiles": 1
+  },
+  "id": "cweibimmosxtswxcitphayrn"
+}

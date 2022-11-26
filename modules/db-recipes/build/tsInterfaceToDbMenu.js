@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.tsInterfaceToDbMenu=void 0;var makeSrcRelativeFolder_1=require("./makeSrcRelativeFolder"),tsInterfaceToDbMenu=function(e,r){var t=(0,makeSrcRelativeFolder_1.makeSrcRelativeFolder)(e.operationRelativeTypescriptFilePath);if(e.operationName)return{name:e.name,operationName:e.operationName,type:r,srcRelativeFolder:t}};exports.tsInterfaceToDbMenu=tsInterfaceToDbMenu;
+//# sourceMappingURL=tsInterfaceToDbMenu.js.map

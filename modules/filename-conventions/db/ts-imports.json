@@ -1,0 +1,35 @@
+[
+  {
+    "createdAt": 1668332403359,
+    "updatedAt": 1668332403359,
+    "deletedAt": 0,
+    "createdFirstAt": 1668332403359,
+    "name": "hasSubExtension",
+    "slug": "has-sub-extension",
+    "module": "./hasSubExtension",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/filename-conventions.ts",
+    "classification": "internal",
+    "isAbsolute": false,
+    "isModuleFromMonorepo": false,
+    "id": "qhxrkfihprzxfgzkcfqleewz"
+  },
+  {
+    "createdAt": 1668332403359,
+    "updatedAt": 1668332403359,
+    "deletedAt": 0,
+    "createdFirstAt": 1668332403359,
+    "name": "makeArray",
+    "slug": "make-array",
+    "type": "value",
+    "module": "js-util",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/hasSubExtension.ts",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "vknpfigsqtjkfjemtniykocp"
+  }
+]

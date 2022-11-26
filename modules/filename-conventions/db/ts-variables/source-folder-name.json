@@ -1,0 +1,24 @@
+{
+  "createdAt": 1668332411846,
+  "updatedAt": 1668332411846,
+  "deletedAt": 0,
+  "createdFirstAt": 1668332411846,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "sourceFolderName",
+  "slug": "source-folder-name",
+  "operationRelativeTypescriptFilePath": "src/filename-conventions.ts",
+  "type": {
+    "rawType": "String",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "\"src\"",
+  "description": "",
+  "id": "mgkitxzbuprtbegtptmsjgpn"
+}

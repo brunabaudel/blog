@@ -1,0 +1,18 @@
+[
+  {
+    "createdAt": 1669276650142,
+    "updatedAt": 1669276650142,
+    "deletedAt": 0,
+    "createdFirstAt": 1669276650142,
+    "name": "Comment",
+    "slug": "comment",
+    "operationRelativeTypescriptFilePath": "src/tsFunctionIsIndexable.ts",
+    "comment": "The path of the function should be indexed by `generateSimpleIndex`, otherwise we can't import it either!",
+    "rawStatement": "export const tsFunctionIsIndexable = (tsFunction: TsFunction) => {\n  const fileId = getSrcRelativeFileId(\n    tsFunction.operationRelativeTypescriptFilePath\n  );\n  return isIndexableFileId(fileId);\n};",
+    "parameters": {},
+    "types": [],
+    "firstLine": 5,
+    "lastLine": 7,
+    "id": "tjsoryuzctqagxniaywbxjyl"
+  }
+]

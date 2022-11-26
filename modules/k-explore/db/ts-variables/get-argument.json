@@ -1,0 +1,33 @@
+{
+  "createdAt": 1668976638606,
+  "updatedAt": 1668976638606,
+  "deletedAt": 0,
+  "createdFirstAt": 1668976638606,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "getArgument",
+  "slug": "get-argument",
+  "operationRelativeTypescriptFilePath": "src/cli.ts",
+  "type": {
+    "rawType": "(number: number) => any",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "(number: number) => {\n  return process.argv[1 + number];\n}",
+  "description": "",
+  "id": "wxzzejiqoslkpbxlptbsysta"
+}

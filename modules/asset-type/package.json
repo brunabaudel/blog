@@ -1,0 +1,75 @@
+{
+  "createdAt": 1668328815352,
+  "updatedAt": 1668328815352,
+  "deletedAt": 0,
+  "createdFirstAt": 1668328815352,
+  "id": "oLDXQDgzLzmvRLWs",
+  "author": "",
+  "dependencies": {
+    "model-types": "0.0.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "test": "node build/index.js",
+    "dev": "tsc -w",
+    "build": "tsc",
+    "up": "npm version patch -f",
+    "pub": "npm run up && npm publish"
+  },
+  "source": "src/index.ts",
+  "version": "0.0.1",
+  "name": "asset-type",
+  "language": "english",
+  "slug": "asset-type",
+  "operation": {
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "dependenciesBuildsFailed": false,
+      "indexErrors": [],
+      "indexImportExportError": "",
+      "indexInteracesErrors": [],
+      "lintProblems": []
+    },
+    "classificationIndexed": "cjs",
+    "coreDependenciesIndexed": [],
+    "folderNameIndexed": "asset-type",
+    "lastPullTimeAtIndexed": 0,
+    "lastRebuildAt": 1669276035394,
+    "operationDependenciesIndexed": [],
+    "packageDependenciesIndexed": [],
+    "relativeOperationLocationPathIndexed": "operations/tools/asset",
+    "markdown": "All types related to asset upload\n",
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 6,
+        "lines": 207,
+        "characters": 5945,
+        "bytes": 5945
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 102,
+        "characters": 2415,
+        "bytes": 2415
+      },
+      "textSize": {
+        "numberOfFiles": 4,
+        "lines": 351,
+        "characters": 11508,
+        "bytes": 11508
+      },
+      "size": {
+        "bytes": 19868,
+        "characters": 19868,
+        "lines": 660,
+        "numberOfFiles": 12
+      }
+    },
+    "hasGeneratedDependenciesIndexed": false,
+    "hasGeneratedImportsIndexed": false
+  }
+}

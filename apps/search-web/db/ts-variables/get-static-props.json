@@ -1,0 +1,33 @@
+{
+  "createdAt": 1669287948669,
+  "updatedAt": 1669287948669,
+  "deletedAt": 0,
+  "createdFirstAt": 1669287948669,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "getStaticProps",
+  "slug": "get-static-props",
+  "operationRelativeTypescriptFilePath": "src/pages/[...query].tsx",
+  "type": {
+    "rawType": "import(\"/Users/king/King/operations/tools/purpose/search/search-web/node_modules/next/types/index\").GetStaticProps<import(\"/Users/king/King/operations/tools/purpose/search/search-web/src/util/types\").QueryPageProps, import(\"querystring\").ParsedUrlQuery, import(\"/Users/king/King/operations/tools/purpose/search/search-web/node_modules/next/types/index\").PreviewData>",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "searchGetStaticProps",
+  "description": "",
+  "id": "nlfqznuclijsykpzcktzotsa"
+}

@@ -1,0 +1,88 @@
+{
+  "createdAt": 1668775441912,
+  "updatedAt": 1668775441912,
+  "deletedAt": 0,
+  "createdFirstAt": 1668775441912,
+  "isApiExposed": true,
+  "isExported": true,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/getGetApiUrl.ts",
+  "commentsInside": [],
+  "rawText": " (\n  apiUrl: string,\n  apiFunctionName: string,\n  query: { [name: string]: string[] | string | undefined }\n) => {\n  const queryString = Object.keys(query).length > 0 ? toQueryString(query) : \"\";\n  const url = `${apiUrl}/function/${apiFunctionName}${queryString}`;\n  return url;\n}",
+  "name": "getGetApiUrl",
+  "slug": "get-get-api-url",
+  "parameters": [
+    {
+      "name": "apiUrl",
+      "schema": {
+        "type": "string"
+      },
+      "simplifiedSchema": {
+        "type": "string"
+      },
+      "required": true
+    },
+    {
+      "name": "apiFunctionName",
+      "schema": {
+        "type": "string"
+      },
+      "simplifiedSchema": {
+        "type": "string"
+      },
+      "required": true
+    },
+    {
+      "name": "query",
+      "schema": {
+        "type": "object",
+        "additionalProperties": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            },
+            {
+              "not": {}
+            }
+          ]
+        }
+      },
+      "simplifiedSchema": {
+        "properties": [],
+        "type": "object"
+      },
+      "required": true
+    }
+  ],
+  "description": "gets an api url for a context get api\n\nreturns something like `[apiUrl]/[apiFunctionName][queryString]`",
+  "returnType": {
+    "rawType": "String",
+    "typeDefinition": {
+      "optional": false,
+      "$ref": "#/definitions/String"
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 1,
+  "size": {
+    "characters": 382,
+    "lines": 11,
+    "bytes": 382,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 35,
+    "linesPerFile": 11,
+    "numberOfFiles": 1
+  },
+  "id": "woakwzdmbokmvkxvtgmrsxgt"
+}

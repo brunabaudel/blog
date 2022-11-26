@@ -1,0 +1,78 @@
+{
+  "createdAt": 1669384701126,
+  "updatedAt": 1669384701126,
+  "deletedAt": 0,
+  "createdFirstAt": 1669384701126,
+  "isApiExposed": true,
+  "isExported": true,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/getMarkdownPageInfo.ts",
+  "commentsInside": [],
+  "rawText": " async (\n  projectRoot: string,\n  webPages: WebPage<any>[],\n  queryPath: string,\n  contentPage: ReaderWebPage\n): Promise<{\n  markdownFile: WebMarkdownFile | null;\n  nextQueryPath: string | null;\n  previousQueryPath: string | null;\n  projectRelativeMarkdownPath: string | null;\n}> => {\n  const parentQuery = getOneFolderUpPath(queryPath);\n  const siblings = getChildren(webPages, parentQuery);\n  const thisPageKey = queryPath.split(\"/\").pop();\n  const meIndex = siblings.findIndex((sibling) => thisPageKey === sibling);\n\n  const previousFolder = siblings[meIndex - 1];\n  const previousQueryPath = previousFolder\n    ? `${parentQuery}/${previousFolder}`\n    : null;\n  const nextFolder = siblings[meIndex + 1];\n  const nextQueryPath = nextFolder ? `${parentQuery}/${nextFolder}` : null;\n\n  const absoluteMarkdownPath = contentPage.pageData?.projectRelativeFilePath\n    ? path.join(projectRoot, contentPage.pageData.projectRelativeFilePath)\n    : undefined;\n\n  const markdownFile = absoluteMarkdownPath\n    ? await readMarkdownFileToModel(absoluteMarkdownPath)\n    : null;\n\n  const projectRelativeMarkdownPath = absoluteMarkdownPath\n    ? makeRelative(absoluteMarkdownPath, projectRoot)\n    : null;\n\n  return {\n    markdownFile,\n    nextQueryPath,\n    previousQueryPath,\n    projectRelativeMarkdownPath,\n  };\n}",
+  "name": "getMarkdownPageInfo",
+  "slug": "get-markdown-page-info",
+  "parameters": [
+    {
+      "name": "projectRoot",
+      "schema": {
+        "type": "string"
+      },
+      "simplifiedSchema": {
+        "type": "string"
+      },
+      "required": true
+    },
+    {
+      "name": "webPages",
+      "schema": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/WebPage%3Cany%3E"
+        }
+      },
+      "simplifiedSchema": {
+        "items": [],
+        "type": "array"
+      },
+      "required": true
+    },
+    {
+      "name": "queryPath",
+      "schema": {
+        "type": "string"
+      },
+      "simplifiedSchema": {
+        "type": "string"
+      },
+      "required": true
+    },
+    {
+      "name": "contentPage",
+      "schema": {
+        "$ref": "#/definitions/ReaderWebPage"
+      },
+      "required": true
+    }
+  ],
+  "description": "If a markdown page is found, this function fetches all metadata needed to render that markdown page",
+  "returnType": {
+    "rawType": "Promise<{ markdownFile: import(\"/Users/king/King/operations/tools/types/markdown-types/build/WebMarkdownFile\").WebMarkdownFile | null; nextQueryPath: string | null; previousQueryPath: string | null; projectRelativeMarkdownPath: string | null; }>",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 2,
+  "size": {
+    "characters": 1405,
+    "lines": 42,
+    "bytes": 1405,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 33,
+    "linesPerFile": 42,
+    "numberOfFiles": 1
+  },
+  "id": "nqaolcdcsubopaljjvjpphxo"
+}

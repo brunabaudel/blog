@@ -1,0 +1,4 @@
+"use strict";var __awaiter=this&&this.__awaiter||function(n,t,e,i){return new(e||(e=Promise))((function(o,u){function r(n){try{a(i.next(n))}catch(n){u(n)}}function s(n){try{a(i.throw(n))}catch(n){u(n)}}function a(n){var t;n.done?o(n.value):(t=n.value,t instanceof e?t:new e((function(n){n(t)}))).then(r,s)}a((i=i.apply(n,t||[])).next())}))};Object.defineProperty(exports,"__esModule",{value:!0}),exports.getFunctionExersize=void 0;const getExamples=n=>__awaiter(void 0,void 0,void 0,(function*(){
+// const examples = (await db.get("FunctionExecution")).filter(x=>x.isExample && x.functionName === functionName)
+})),getFunctionExersize=n=>__awaiter(void 0,void 0,void 0,(function*(){return'\nWrite a function that can do this:\n\n\n\nIt should take this as its inputs:\n\n\n\nIt should return this:\n\n\n\nSome examples:\n\nInput `x, y, z`. Output should be "a"\n'}));exports.getFunctionExersize=getFunctionExersize;
+//# sourceMappingURL=FunctionExecution.js.map

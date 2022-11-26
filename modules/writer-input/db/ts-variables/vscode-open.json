@@ -1,0 +1,24 @@
+{
+  "createdAt": 1669385117826,
+  "updatedAt": 1669385117826,
+  "deletedAt": 0,
+  "createdFirstAt": 1669385117826,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "{ vscodeOpen }",
+  "slug": "vscode-open",
+  "operationRelativeTypescriptFilePath": "src/WriterInput.tsx",
+  "type": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "api",
+  "description": "",
+  "id": "dzflfawjtamxrrsrkyowkveu"
+}

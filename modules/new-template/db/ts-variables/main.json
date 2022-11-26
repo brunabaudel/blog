@@ -1,0 +1,33 @@
+{
+  "createdAt": 1669055670400,
+  "updatedAt": 1669055670400,
+  "deletedAt": 0,
+  "createdFirstAt": 1669055670400,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "main",
+  "slug": "main",
+  "operationRelativeTypescriptFilePath": "src/newOperationWithFiles.test.ts",
+  "type": {
+    "rawType": "() => any",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "async () => {\n  await newOperationWithFiles(\n    \"test-operation\",\n    \"This is amaaaaazzzz\",\n    { \"src/test-operation.ts\": \"//this is a file\\nexport const x = 1;\" },\n    { overwriteIfExists: true }\n  );\n}",
+  "description": "",
+  "id": "mgxnpdbxgotaeeogdgtujwub"
+}

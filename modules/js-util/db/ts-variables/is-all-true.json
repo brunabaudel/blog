@@ -1,0 +1,33 @@
+{
+  "createdAt": 1668977390723,
+  "updatedAt": 1668977390723,
+  "deletedAt": 0,
+  "createdFirstAt": 1668977390723,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "isAllTrue",
+  "slug": "is-all-true",
+  "operationRelativeTypescriptFilePath": "src/general.ts",
+  "type": {
+    "rawType": "(array: boolean[]) => boolean",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "(array: boolean[]): boolean => {\n  return !array.find((x) => !x);\n}",
+  "description": "checks if all items in an array are true",
+  "id": "wedzfxxsovaitipljgtcdiyy"
+}

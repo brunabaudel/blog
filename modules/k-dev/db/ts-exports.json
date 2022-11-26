@@ -1,0 +1,26 @@
+[
+  {
+    "createdAt": 1668336466528,
+    "updatedAt": 1668336466528,
+    "deletedAt": 0,
+    "createdFirstAt": 1668336466528,
+    "name": "dev",
+    "slug": "dev",
+    "operationRelativeTypescriptFilePath": "src/dev.ts",
+    "comments": [],
+    "type": "value",
+    "id": "xpvcjfltlfotoffomxliitjn"
+  },
+  {
+    "createdAt": 1668336466528,
+    "updatedAt": 1668336466528,
+    "deletedAt": 0,
+    "createdFirstAt": 1668336466528,
+    "name": "dev",
+    "slug": "dev",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "vgvszhbfhvpwdqejxecjizzl"
+  }
+]
