@@ -1,8 +1,8 @@
 {
-  "createdAt": 1669477604764,
-  "updatedAt": 1669477604764,
+  "createdAt": 1672503773237,
+  "updatedAt": 1672503773237,
   "deletedAt": 0,
-  "createdFirstAt": 1669477604764,
+  "createdFirstAt": 1672503773237,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "(props: MarkdownReaderPageProps) => {\n  return (\n    <Layout>\n      <Div className=\"flex flex-col px-2 my-5 gap-y-5 gap\">\n        <P className=\"text-2xl\">My Code Storys</P>\n      </Div>\n      <Div className=\"flex flex-row flex-wrap\">\n        {props.menu.flat.map((x) => {\n          return (\n            <ALink key={x.queryPath} href={x.queryPath}>\n              <Div className=\"w-80 bg-yellow-300 hover:bg-yellow-200 m-2 rounded-md p-4\">\n                {x.pageData.imagePath ? (\n                  <AssetView\n                    projectRelativeReferencingFilePath={\n                      x.pageData.projectRelativeFilePath\n                    }\n                    className=\"h-40 object-cover w-80\"\n                    hideDownloadLink\n                    asset={{\n                      projectRelativeReferencingFilePath:\n                        x.pageData.projectRelativeFilePath,\n                      relativePath: x.pageData.imagePath,\n                    }}\n                  />\n                ) : null}\n                <P className=\"text-3xl\">{x.menuTitle}</P>\n              </Div>\n            </ALink>\n          );\n        })}\n      </Div>\n    </Layout>\n  );\n}",
   "description": "",
-  "id": "wcxxekpkslupizzjdhpoidvt"
+  "id": "doxjdbpjmtoakeczdgwaxdlm"
 }

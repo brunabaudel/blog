@@ -44,8 +44,8 @@
   },
   "private": true,
   "scripts": {
-    "dev": "next dev -p 42017",
-    "start": "next start -p 42017",
+    "dev": "next dev -p 42020",
+    "start": "next start -p 42020",
     "stop": "pm2 stop app_codestorys-web",
     "fillPublic": "node fillPublic.js",
     "writeAllCodestories": "npx writeAllCodestories",

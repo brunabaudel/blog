@@ -6,4 +6,4 @@ privacy: public
 language: english
 ---
 
-Hello, I'm Bruna :)
+``
