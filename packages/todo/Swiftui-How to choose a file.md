@@ -5,7 +5,7 @@ headerImage: ![](./abstract-3840x2160-colorful-lines-4k-20643.jpg)
 privacy: public
 language: english
 ---
-The fileImporter View Modifier in SwiftUI
+The fileImporter View Modifier in SwiftUI (iOS 14+)
 
 SwiftUI is a declarative framework for building user interfaces on Apple platforms.
 It provides a number of built-in view modifiers that allow you to easily customize the appearance

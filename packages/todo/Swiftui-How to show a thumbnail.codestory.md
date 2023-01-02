@@ -8,7 +8,7 @@ language: english
 
  
 
-Generating Thumbnails in SwiftUI with QLThumbnailGenerator
+Generating Thumbnails in SwiftUI with QLThumbnailGenerator (iOS 13+)
 
 Apple provides a number of powerful tools for building modern iOS applications, including the ability to generate thumbnails for files. One way to do this is through the use of the `QLThumbnailGenerator` class, which is part of the QuickLook framework.
 
