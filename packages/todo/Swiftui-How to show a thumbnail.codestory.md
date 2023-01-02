@@ -99,6 +99,3 @@ struct ContentView: View {
  This code utilizes the `fileImporter` modifier to choose a file and shows the thumbnail after.
 
  https://developer.apple.com/documentation/quicklookthumbnailing/qlthumbnailgenerator
-
-undefined
-
