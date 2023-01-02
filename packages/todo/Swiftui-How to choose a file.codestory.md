@@ -70,3 +70,89 @@ When the document picker is dismissed, the closure passed to the `fileImporter` 
 Using the `fileImporter` view modifier, you can easily add file import functionality to your SwiftUI app, allowing your users to select and import files from their device.
 
  https://developer.apple.com/documentation/swiftui/form/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:)
+
+<details>
+  
+  <summary>Text</summary>
+  
+  
+
+
+
+```tsx
+ ({ native, ...props }: TextType) => {
+  return <p {...props} />;
+}
+```
+  
+  </details>
+  
+
+<details>
+  
+  <summary>Button</summary>
+  
+  
+
+
+
+```tsx
+ ({
+  native,
+  className,
+  textClassName,
+  ...props
+}: ButtonType) => {
+  return (
+    <button {...props} className={joinClassNames(className, textClassName)} />
+  );
+}
+```
+  
+  </details>
+  
+
+<details>
+  
+  <summary>Text</summary>
+  
+  
+
+
+
+```tsx
+ ({ native, ...props }: TextType) => {
+  return <p {...props} />;
+}
+```
+  
+  </details>
+  
+
+<details>
+  
+  <summary>Button</summary>
+  
+  
+
+
+
+```tsx
+ ({
+  native,
+  className,
+  textClassName,
+  ...props
+}: ButtonType) => {
+  return (
+    <button {...props} className={joinClassNames(className, textClassName)} />
+  );
+}
+```
+  
+  </details>
+  
+
+
+undefined
+
