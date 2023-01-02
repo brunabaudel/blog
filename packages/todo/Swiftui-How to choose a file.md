@@ -16,7 +16,7 @@ To use the `fileImporter` view modifier, you first need to import the SwiftUI mo
 apply the view modifier to any view by calling the `fileImporter` method on the view and passing it 
 the necessary parameters.
 
-The `fileImporter` view modifier has three parameters:
+The `fileImporter` view modifier has four parameters:
 
 * `isPresented`: a binding to a state variable that determines whether the document picker is currently 
 being presented. When this value is `true`, the document picker is shown, and when it is `false`, the
@@ -65,3 +65,5 @@ In this example, the `fileImporter` view modifier is applied to a `VStack` conta
 When the document picker is dismissed, the closure passed to the `fileImporter` view modifier is called, and it assigns the first `URL` of the selected files (if any) to the `fileURL` state variable. If the import failed, the `fileURL` state variable will be set to `nil`.
 
 Using the `fileImporter` view modifier, you can easily add file import functionality to your SwiftUI app, allowing your users to select and import files from their device.
+
+ https://developer.apple.com/documentation/swiftui/form/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:)
