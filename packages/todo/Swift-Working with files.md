@@ -6,7 +6,7 @@ privacy: public
 language: english
 ---
 
-A `FileControl` class to work with `FileManager` and the user Document directory (iOS 2+)
+A `FileControl` class to work with `FileManager` and the Documents Directory (iOS 2+)
 
 ```
 import Foundation
