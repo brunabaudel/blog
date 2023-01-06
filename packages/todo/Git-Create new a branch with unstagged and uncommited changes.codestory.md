@@ -19,7 +19,7 @@ git switch -c newbranch
 Git version before 2.23
 
 ```
-git switch -c newbranch
+git checkout -b newbranch
 ```
 
 To push you have to configure the upstream
