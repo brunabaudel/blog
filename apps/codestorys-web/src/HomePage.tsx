@@ -8,6 +8,7 @@ export const HomePage = (props: MarkdownReaderPageProps) => {
     <Layout>
       <Div className="flex flex-col px-2 my-5 gap-y-5 gap">
         <P className="text-2xl">My Code Storys</P>
+        <P className="text-xl">A collection of code and other tech stuff :)</P>
       </Div>
       <Div className="flex flex-row flex-wrap">
         {props.menu.flat.map((x) => {
