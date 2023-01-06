@@ -28,6 +28,9 @@ To push you have to configure the upstream
 git push --set-upstream origin newbranch
 ```
 
+The `git switch` command was introduced as an alternative to reduce the responsibilities of the `git checkout` command.
+This separation of responsibilities allows for a more streamlined and intuitive workflow when working with branches in Git.
+
 Git https://git-scm.com/docs/git-switch
 
 Git https://git-scm.com/docs/git-checkout
